@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.navBarPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: beige;
+}
+.ulLogin{
+    display: flex;
+    flex-direction: row;
+}
+.ulPrincipal{
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+.navBarLista li{
+    display: flex;
+    padding: 5px;   
+    color: #000;
+}
+.navBarPrincipal{
+    display: flex;
+    flex-direction: row;
+}
+.listaLogin li{
+    display: flex;
+    padding: 5px;
+    color: #000;    
+}

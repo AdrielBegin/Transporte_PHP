@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    flex-direction: column;
+    padding: 1vw;
+}
+.painel{
+    display: flex;
+    background-color: aquamarine;
+    height: 12vh;
+}
