@@ -37,11 +37,37 @@ input{
     
 }
 .botao input{
+    display: flex;
     padding: 10px 90px;
     background-color: #FF4B60;
     border: none;
     color: aliceblue;
 }
+
+a{    
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+button{    
+    display: flex;
+    padding: 9px;
+    background-color: #FF4B60;
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+}
+
+ .botao{
+    display: flex;
+    flex-direction: column;       
+    text-align: center;
+} 
+
+
+
+
+
 .imagemLado{        
     /* background: #FF416C; */
     grid-column-start: 2;

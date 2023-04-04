@@ -57,3 +57,11 @@ footer{
     width: 30%;
     height: 50%;
 }
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+  }
