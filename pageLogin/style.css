@@ -28,7 +28,7 @@ form{
 }
 input{
     display: flex;
-    padding: 6px 9px;
+    padding: 12px 29px;
     margin: 8px 0;
     border-radius: 5px;
     border: none;
@@ -36,7 +36,7 @@ input{
     
 }
 .botao input{
-    padding: 6px 32px;
+    padding: 10px 90px;
     background-color: #FF4B60;
     border: none;
     color: aliceblue;
