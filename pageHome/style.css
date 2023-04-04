@@ -44,3 +44,12 @@ img{
     padding: 5px;
     color: #000;    
 }
+footer{
+    left: 0;
+    right: 0;
+    position: fixed;    
+    background-color: #282a2a;
+    bottom: 0;
+    text-align: center;
+    color: white;
+}
