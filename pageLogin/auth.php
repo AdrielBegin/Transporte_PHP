@@ -14,12 +14,13 @@ if($cadUsuario == $usuario){
     }    
 }  
 
-if($cadUsuario != $usuario){
-    if($cadSenha != $senha){
-        $_SESSION["usuarioCadastrado"] = $cadUsuario;
-        echo"<h1>Os dados estão errados</h1>";
-        echo"<a href='../pageLogin/index.html'>Retornar</a>";        
-    }    
+if($cadUsuario != $usuario and $cadSenha != $senha){
+    
+    $_SESSION["usuarioCadastrado"] = $cadUsuario;
+    echo"<h1>Os dados estão incorretos</h1>";
+    echo"<a href='../pageLogin/index.html'>Retornar para tela de login</a>";
+    
+    
 }  
 
 
