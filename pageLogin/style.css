@@ -1,33 +1,55 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-.container{  
-    display: flex;      
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.formulario{
+    /* display: flex; */
+    
+}
+form{
+    display: flex;
+    align-content: center;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 0 50px;
     height: 100vh;
-    width: 67vw;
-    background:gray;
-
+    text-align: center;
     
 }
-.campos{    
+input{
     display: flex;
-    flex-direction: column;
+    padding: 6px 9px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #EDE;
+    
 }
-.botoes{
-    display: flex;
-    background:"gray"
+.botao input{
+    padding: 6px 32px;
+    background-color: #FF4B60;
+    border: none;
+    color: aliceblue;
 }
-.teladoLado{
-   display: flex;
-   margin-left: 227px;
-   background:yellow;     
+.imagemLado{        
+    /* background: #FF416C; */
+    grid-column-start: 2;
+    grid-column-end: 5
 }
-.loginTotal{
-    background:blue;        
-    display: flex;
-    flex-direction: row-reverse;
+img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 102vh;
 }

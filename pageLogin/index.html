@@ -8,23 +8,23 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="loginTotal">    
-     <div class="teladoLado"><h1>TELA LADO</h1></div> 
-      <form action="auth.php" method="post">        
-        <div class="container">
-            <h1>Login</h1>
-            <div class="campos">
-                <label for="">Usuario</label>
-                <input type="text" name="usuario">
-                <label for="">Senha</label>
-                <input type="text" name="senha">                   
-            </div>
-            <div class="botoes">
-                <input type="submit" value="Entrar">
-                <input type="reset" value="Limpar">
-            </div>            
-        </div>        
-      </form>     
+    <div class="wrapper">    
+        <div class="formulario">
+            <form action="auth.php" method="post">        
+                <h1>Login</h1>
+                <div class="campos">                                        
+                    <input type="text" name="usuario" placeholder="Usuario">                  
+                    <input type="text" name="senha" placeholder="Senha">                   
+                </div>
+                <div class="botao">
+                    <input type="submit" value="Entrar">                    
+                </div>            
+            </form>  
+        </div>
+        <div class="imagemLado">
+            <img src="aviaoBranco.png" >
+        </div>
+
     </div>
 </body>
 </html>
