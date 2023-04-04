@@ -1,15 +1,22 @@
 *{
     margin: 0;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 a{
     text-decoration: none;
+}
+img{
+    width: 36vh;
+    height: 6vh;
 }
 .navBarPrincipal{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: beige;
+    background-color: white;
 }
 .ulLogin{
     display: flex;
@@ -18,16 +25,15 @@ a{
 .ulPrincipal{
     display: flex;
     flex-direction: row;
-    background-color: brown;
+    background-color: #FF416C;
     justify-content: space-evenly;
     align-items: center;
-    
-    
+    color: white;     
 }
 .navBarLista li{
     display: flex;
     padding: 5px;   
-    color: #000;
+    color: white;
 }
 .navBarPrincipal{
     display: flex;

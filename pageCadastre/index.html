@@ -8,31 +8,27 @@
     <title>Cadastre-se</title>
 </head>
 <body>
-    <form action="auth.php" method="post">
-              
-        <div class="container">   
-            <div class="painel">
-                <p>opa</p>
-            </div> 
-            <h1>Cadastre-se</h1>
-            <label for="">Nome e Sobrenome</label>
-            <input type="text" name="nome">
-            
-            <label for="">Usuario</label>
-            <input type="text" name="usuarioCadastrado">
-    
-            <label for="">Senha</label>
-            <input type="password" name="senhaCadastrada">
-    
-            <label for="">Senha confirma</label>
-            <input type="password" name="confirmaSenha">
-            <div class="botoes">                
-                <input type="submit" value="Cadastre-se"><br>             
-                <input type="reset" value="Limpar">                
-            </div> 
+    <div class="wrapper">
+        <form action="auth.php" method="post">              
+            <div class="formulario">                   
+                <h1>Cadastre-se</h1>                
+                <input type="text" name="nome" placeholder="Nome e Sobrenome">         
+                
+                <input type="text" name="usuarioCadastrado" placeholder="Usuario">   
+                
+                <input type="password" name="senhaCadastrada" placeholder="Senha">   
+                
+                <input type="password" name="confirmaSenha" placeholder="Senha confirma">
+                <div class="botao">                
+                    <input type="submit" value="Cadastre-se"><br>
+                </div> 
+            </div>             
+        </form>
+        <div class="imagemLado">
+            <img src="BackGroundLogo.png" >
         </div>
-             
-    </form>
+    </div>
+
     
 </body>
 </html>

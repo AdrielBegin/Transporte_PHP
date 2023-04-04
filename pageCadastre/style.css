@@ -1,22 +1,54 @@
-.container{
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.formulario{
+    /* display: flex; */
+    
+}
+form{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
     align-content: center;
-    width: 100vw;
-    height: 100vh;
     justify-content: center;
-}
-.botoes{
-    display: flex;
-    justify-content: center;
-    align-content: center; 
     flex-direction: column;
-    padding: 1vw;
+    align-items: center;
+    padding: 0 50px;
+    height: 100vh;
+    text-align: center;
+    
 }
-.painel{
+input{
     display: flex;
-    background-color: aquamarine;
-    height: 12vh;
+    padding: 16px 22px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #EDE;
+    
+}
+.botao input{
+    padding: 9px 63px;
+    background-color: #FF4B60;
+    border: none;
+    color: aliceblue;
+}
+.imagemLado{        
+    /* background: #FF416C; */
+    grid-column-start: 2;
+    grid-column-end: 5
+}
+img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   
 }
