@@ -57,11 +57,18 @@ footer{
     width: 30%;
     height: 50%;
 }
-
-
-
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-  }
+.imagemFundo{
+    width: 30%;
+    height: 50%;
+}
+.cotacao {
+    display: grid;    
+    align-items: start;
+    justify-items: center;
+    border-bottom: 1px solid grey;        
+    background-color: #FF416C;
+    margin: 19vw;
+}
+.campos{
+    display: flex;    
+}
