@@ -49,19 +49,38 @@
     <?php      
           
         error_reporting(0);
-        $cep = $_GET["informCEPorigem"];       
-        $url ='https://viacep.com.br/ws/'.$cep.'/json/';
-        $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");    
+        $cepOrigem = $_GET["informCEPorigem"];   
+        $cepDestino = $_GET["informCEPdestino"];        
         
-        if($cep != null){
-            $resultado = json_decode(curl_exec($ch));      
-            echo "<p>Pais: " .$resultado->localidade."</p><br>";  
+        $urlOrigem ='https://viacep.com.br/ws/'.$cepOrigem.'/json/';
+        $urlDestino ='https://viacep.com.br/ws/'.$cepDestino.'/json/';
+
+        $chUm = curl_init($urlOrigem);
+        curl_setopt($chUm, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($chUm, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($chUm, CURLOPT_CUSTOMREQUEST, "GET");    
+
+        $chDois = curl_init($urlDestino);
+        curl_setopt($chDois, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($chDois, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($chDois, CURLOPT_CUSTOMREQUEST, "GET");    
+        
+        if($cepOrigem != null){
+            $resultado = json_decode(curl_exec($chUm));      
+            echo "<p>Pais de Origem: " .$resultado->localidade = "</p><br>";  
             echo "<p>UF: " .$resultado->uf."</p><br>";  
             echo "<p>Bairro: " .$resultado->bairro."</p><br>";  
-            echo "<p>Logradouro: " .$resultado->logradouro."</p><br>";                     
+            echo "<p>Logradouro: " .$resultado->logradouro."</p><br>";                                
+        }
+
+        if($urlDestino != null){
+            $resultado = json_decode(curl_exec($chDois));      
+            echo"<hr>";
+            echo "<p>Pais de Destino: " .$resultado->localidade = "</p><br>";  
+            echo "<p>UF: " .$resultado->uf."</p><br>";  
+            echo "<p>Bairro: " .$resultado->bairro."</p><br>";  
+            echo "<p>Logradouro: " .$resultado->logradouro."</p><br>";  
+            echo "<p>Valor da cotação é: <strong>$435.55</strong></p><br>";                   
         }
                        
     ?> 
