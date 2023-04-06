@@ -36,17 +36,37 @@
         <img class="imagemFundo" src="BackGroundLogo.png" alt="">        
     </div>    
     <div class="cotacao">
-        <div><p>Cotação de envio de encomendas</p></div>    
-        <form action="" method="post">
+        <div><p style="color:white">Cotação de envio de encomendas</p></div>    
+        <form action="" method="get">
             <div class="campos">
               <input type="text" name="informCEPorigem" placeholder="informe de CEP de origem">
               <input type="text" name="informCEPdestino" placeholder="informe de CEP de destino">
               <div class="botao">
-                <input type="submit" name="buscar">
+                <input type="submit" name="buscar" value="Buscar">
               </div>
             </div>
         </form>          
-    </div>        
+    </div> 
+    <?php      
+          
+        error_reporting(0);
+        $cep = $_GET["informCEPorigem"];       
+        $url ='https://viacep.com.br/ws/'.$cep.'/json/';
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");    
+        
+        if($cep != null){
+            $resultado = json_decode(curl_exec($ch));      
+            echo "<p>Pais: " .$resultado->localidade."</p><br>";  
+            echo "<p>UF: " .$resultado->uf."</p><br>";  
+            echo "<p>Bairro: " .$resultado->bairro."</p><br>";  
+            echo "<p>Logradouro: " .$resultado->logradouro."</p><br>";                     
+        }
+                       
+    ?> 
+      
 </body>
 <footer>
     <p>Copyright ©</p>

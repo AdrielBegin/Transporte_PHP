@@ -65,10 +65,38 @@ footer{
     display: grid;    
     align-items: start;
     justify-items: center;
-    border-bottom: 1px solid grey;        
-    background-color: #FF416C;
-    margin: 19vw;
+    background-color: #0e0c0d82;
+    margin: 2vw;
 }
 .campos{
     display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    display: flex;
+    padding: 16px 3vw;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #EDE;
+    
+}
+.botao input{
+    display: flex;    
+    padding: 9px 5.5vw;
+    background-color: #FF4B60;
+    border: none;
+    color: aliceblue;
+}
+.botao{
+    display: flex;
+    flex-direction: column;       
+    text-align: center;
+    align-items: center;
+    
+} 
+p{
+    display: flex;
+    justify-content: center;
 }
