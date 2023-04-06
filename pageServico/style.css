@@ -7,6 +7,16 @@ body{
 a{
     text-decoration: none;
 }
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
 img{
     width: 36vh;
     height: 6vh;
@@ -56,57 +66,4 @@ footer{
 .imagemFundo{
     width: 30%;
     height: 50%;
-}
-.imagemFundo{
-    width: 30%;
-    height: 50%;
-}
-.cotacao {
-    display: grid;    
-    align-items: start;
-    justify-items: center;
-    background-color: #0e0c0d82;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 17px;
-    border-radius: 39px;
-}
-.campos{
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-}
-input{
-    display: flex;
-    padding: 16px 3vw;
-    margin: 8px 0;
-    border-radius: 5px;
-    border: none;
-    background-color: #EDE;
-    
-}
-.botao input{
-    display: flex;    
-    padding: 9px 5.5vw;
-    background-color: #FF4B60;
-    border: none;
-    color: aliceblue;
-}
-.botao{
-    display: flex;
-    flex-direction: column;       
-    text-align: center;
-    align-items: center;
-    
-} 
-p{
-    display: flex;
-    justify-content: center;
-}
-.logo{
-    display: flex;
-    justify-content: center;
-}
-.logo img{
-    width: min-content;
 }

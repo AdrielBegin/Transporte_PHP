@@ -23,9 +23,8 @@
         </div>
         <div class="navBarLista">
             <ul class="ulPrincipal">
-                <a href="../Exception/index.html"><li>Serviço</li></a>
-                <a href="../Exception/index.html"><li>Conheça Azul Cargo Express</li></a>
-                <a href="../Exception/index.html"><li>Voe Azul</li></a>
+                <a href="../pageServico/index.html"><li>Serviço</li></a>
+                <a href="../Exception/index.html"><li>Conheça Azul Cargo Express</li></a>                
                 <a href="../Exception/index.html"><li>Fazer Envio</li></a>
                 <a href="../Exception/index.html"><li>Restrear</li></a>
                 <a href="../Exception/index.html"><li>Conta</li></a>
