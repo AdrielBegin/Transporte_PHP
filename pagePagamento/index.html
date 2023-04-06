@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../pageLogin/auth.php">
-    <link rel="stylesheet" href="style.css">
-    <title>Serviço</title>
+    <title>Pagamento</title>    
 </head>
-<body>
+<body>    
     <div>
-        <div class="navBarPrincipal">
+        <div class="navBarPrincipal">            
             <div class="logo">
                 <a href="../pageHome/index.html"><img src="logoAviazao.jpg" /></a>
             </div class="">
@@ -26,30 +24,23 @@
         <div class="navBarLista">
             <ul class="ulPrincipal">
                 <a href="../pageServico/index.html"><li>Serviço</li></a>
-                <a href="../Exception/index.html"><li>Conheça Azul Cargo Express</li></a>                
+                <a href="../Exception/index.html"><li>Conheça Azul Cargo Express</li></a>
                 <a href="../PageFazerEnvio/index.php"><li>Fazer Envio</li></a>
                 <a href="../Exception/index.html"><li>Restrear</li></a>
                 <a href="../Exception/index.html"><li>Conta</li></a>
             </ul>    
+            <p>Pagamento</p>
+            <form action="" method="post">
+                <input type="text" name="Nome" placeholder="Nome" id="">
+                <input type="text" name="Sobrenome" placeholder="Sobrenome" id="">
+                <input type="text" name="NumCartao" placeholder="Numero do cartão" id="">
+                <input type="date" name="dtVencimento" placeholder="Data de Vencimento" id="">
+                <input type="number" name="codSeguranca" placeholder="CVC" id="">
+                <input type="number" name="totalPagar"  placeholder="Total a Pagar" id="">
+                <button>Pagar</button>
+            </form>
         </div>       
     </div>
-    <div>
-        <!-- <img class="imagemFundo" src="BackGroundLogo.png" alt="">         -->        
-    </div>
-    <div class="cards">
-        <div class="cards">
-            <p>Ideal para remessas urgentes, permite que o envio seja feito em até 2h antes da decolagem de um voo e a retirada em até 2h após a chegada.</p>
-        </div>
-        <div class="cards">
-            <p>A melhor opção para enviar suas encomendas com prazo apertado, garantindo entregas entre 24 e 48 horas para os principais centros.</p>
-        </div>
-        <div class="cards">
-            <p>A alternativa mais adequada para você que quer garantir segurança e agilidade nas entregas do seu e-commerce.</p>
-        </div>
-    </div>
+    
 </body>
-<footer>
-    <p>Copyright ©</p>
-</footer>    
 </html>
-

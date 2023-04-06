@@ -11,7 +11,7 @@
     <div>
         <div class="navBarPrincipal">
             <div >
-                <img src="logoAviazao.jpg" />
+                <a href="../pageHome/index.html"><img src="logoAviazao.jpg" /></a>
             </div class="">
             <div class="listaLogin">                
                 <ul class="ulLogin">                                       
