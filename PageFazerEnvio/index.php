@@ -10,7 +10,7 @@
 <body>
     <div>
         <div class="navBarPrincipal">
-            <div class="logo">
+            <div >
                 <img src="logoAviazao.jpg" />
             </div class="">
             <div class="listaLogin">                
@@ -32,8 +32,8 @@
             </ul>    
         </div>       
     </div>
-    <div>
-        <img class="imagemFundo" src="BackGroundLogo.png" alt="">        
+    <div class="logo">
+        <!-- <img class="imagemFundo" src="BackGroundLogo.png" alt="">         -->
     </div>    
     <div class="cotacao">
         <div><p style="color:white">Cotação de envio de encomendas</p></div>    
