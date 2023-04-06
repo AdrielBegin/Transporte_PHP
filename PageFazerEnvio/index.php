@@ -28,6 +28,7 @@
                 <a href="../Exception/index.html"><li>Fazer Envio</li></a>
                 <a href="../Exception/index.html"><li>Restrear</li></a>
                 <a href="../Exception/index.html"><li>Conta</li></a>
+                <a href="../pagePagamento/index.html"><li>Pagemento</li></a>
             </ul>    
         </div>       
     </div>
