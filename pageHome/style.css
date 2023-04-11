@@ -57,3 +57,7 @@ footer{
     width: 30%;
     height: 50%;
 }
+.logo{
+    display: flex;
+    justify-content: center;
+}
