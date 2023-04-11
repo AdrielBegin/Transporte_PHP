@@ -61,3 +61,7 @@ footer{
     display: flex;
     justify-content: center;
 }
+h1{
+    display: flex;
+    justify-content: center
+}

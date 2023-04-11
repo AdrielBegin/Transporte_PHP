@@ -26,18 +26,17 @@
                 <a href="../pageServico/index.html"><li>Serviço</li></a>
                 <a href="../Exception/index.html"><li>Conheça Azul Cargo Express</li></a>
                 <a href="../PageFazerEnvio/index.php"><li>Fazer Envio</li></a>
-                <a href="../Exception/index.html"><li>Restrear</li></a>
                 <a href="../Exception/index.html"><li>Conta</li></a>
                 <a href="../pagePagamento/index.html"><li>Pagemento</li></a>
-            </ul>    
-            <p>Pagamento</p>
-            <form action="" method="post">
-                <input type="text" name="Nome" placeholder="Nome" id="">
-                <input type="text" name="Sobrenome" placeholder="Sobrenome" id="">
-                <input type="text" name="NumCartao" placeholder="Numero do cartão" id="">
-                <input type="date" name="dtVencimento" placeholder="Data de Vencimento" id="">
+            </ul>                
+            <form action="pagamento.php" method="get">
+                <h2>Pagamento</h2>
+                <input type="text" name="Nome" placeholder="Nome" >
+                <input type="text" name="Sobrenome" placeholder="Sobrenome" >
+                <input type="text" name="NumCartao" placeholder="Numero do cartão" >
+                <input type="date" name="dtVencimento" placeholder="Data de Vencimento" style="padding: 12px 59px" >
                 <input type="number" name="codSeguranca" placeholder="CVC" id="">
-                <input type="number" name="totalPagar"  placeholder="Total a Pagar" id="">
+                <input type="number" name="totalPagar"  placeholder="Total a Pagar" >
                 <button>Pagar</button>
             </form>
         </div>       

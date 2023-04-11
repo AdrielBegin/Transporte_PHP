@@ -68,20 +68,25 @@
         
         if($cepOrigem != null){
             $resultado = json_decode(curl_exec($chUm));      
-            echo "<p>Pais de Origem: " .$resultado->localidade = "</p><br>";  
-            echo "<p>UF: " .$resultado->uf."</p><br>";  
-            echo "<p>Bairro: " .$resultado->bairro."</p><br>";  
-            echo "<p>Logradouro: " .$resultado->logradouro."</p><br>";                                
+            $stringUm = $resultado->cep;
+            $stringUm = intval($stringUm);
+            echo "<p>Pais de Origem: " .$resultado->localidade . "</p>";  
+            echo "<p>UF: " .$resultado->uf."</p>";  
+            echo "<p>Bairro: " .$resultado->bairro."</p>";  
+            echo "<p>Logradouro: " .$resultado->logradouro."</p>";                                
         }
 
-        if($urlDestino != null){
+        if($cepDestino != null){
             $resultado = json_decode(curl_exec($chDois));      
+            $stringDois = $resultado->cep;
+            $stringDois = intval($stringDois);
+            $conta = ($stringDois-$stringUm)*5;
             echo"<hr>";
-            echo "<p>Pais de Destino: " .$resultado->localidade = "</p><br>";  
-            echo "<p>UF: " .$resultado->uf."</p><br>";  
-            echo "<p>Bairro: " .$resultado->bairro."</p><br>";  
-            echo "<p>Logradouro: " .$resultado->logradouro."</p><br>";  
-            echo "<p>Valor da cotação é: <strong>$435.55</strong></p><br>";                   
+            echo "<p class='cep'>Pais de Destino:  .$resultado->localidade</p>";  
+            echo "<p class='cep'>UF: " .$resultado->uf."</p>";  
+            echo "<p class='cep'>Bairro: " .$resultado->bairro."</p>";  
+            echo "<p class='cep'>Logradouro: " .$resultado->logradouro."</p>";  
+            echo "<p class='cep'>Valor da cotação é: <strong>$$conta</strong></p>";                                           
         }
                        
     ?> 

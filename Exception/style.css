@@ -29,3 +29,7 @@ button {
     text-align: center;
     align-items: center;
 } 
+h1{
+    display: flex;
+    justify-content: center;
+}

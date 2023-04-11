@@ -103,6 +103,10 @@ p{
     display: flex;
     justify-content: center;
 }
+hr{
+    margin: 1px;
+    
+}
 .logo{
     display: flex;
     justify-content: center;
