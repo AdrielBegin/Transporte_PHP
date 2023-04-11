@@ -8,13 +8,11 @@ body{
 
 .wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-}
+    grid-template-columns: 1fr; 
+    grid-gap: 1rem;
+  }
 
-.formulario{
-    /* display: flex; */
-    
-}
+
 form{
     display: flex;
     align-content: center;
@@ -57,6 +55,7 @@ a{
     text-decoration: none;
     color: aliceblue;
     text-align: center;
+    
 }
 button{    
     display: flex;

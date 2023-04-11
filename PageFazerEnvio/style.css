@@ -114,3 +114,22 @@ hr{
 .logo img{
     width: min-content;
 }
+@media (max-width: 768px) {
+    form {
+      flex-direction: column;
+    }
+    .botao input {
+      padding: 10px 2em;
+    }
+  }
+  
+  /* Para telas maiores */
+  @media (min-width: 768px) {
+    form {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .botao {
+      margin-left: 1em;
+    }
+  }
