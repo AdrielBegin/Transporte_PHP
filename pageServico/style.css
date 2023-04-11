@@ -13,8 +13,8 @@ a{
 }
 .cards {
     max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
+    margin: 8vh auto;
+    display: flex;
     gap: 1rem;
 }
 img{
