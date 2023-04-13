@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <?php
 session_start();
 
@@ -17,8 +18,8 @@ if($cadUsuario == $usuario){
 if($cadUsuario != $usuario and $cadSenha != $senha){
     
     $_SESSION["usuarioCadastrado"] = $cadUsuario;
-    echo"<h1>Os dados estão incorretos</h1>";
-    echo"<a href='../pageLogin/index.html'>Retornar para tela de login</a>";
+    echo"<h1 class='erro'>Os dados estão incorretos</h1>";
+    echo"<button style='margin-left:45vw;' ><a href='../pageLogin/index.html'>Retornar para tela de login</a></button>";
     
     
 }  

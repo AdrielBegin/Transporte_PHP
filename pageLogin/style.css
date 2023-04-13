@@ -81,3 +81,12 @@ footer{
     text-align: center;
     color: white;
 }
+.erro{
+    display:flex;
+    background-color:#FFCACA; 
+    border:2px #a60202 solid; 
+    color:#a60202; 
+    border-radius:5px;
+    justify-content: center;
+    margin: 110px;
+}
