@@ -25,7 +25,7 @@
         <div class="navBarLista">
             <ul class="ulPrincipal">
                 <a href="../pageServico/index.html"><li>Serviço</li></a>
-                <a href="../Exception/index.html"><li>Conheça Azul Cargo Express</li></a>                
+                <a href="../Exception/index.html"><li>Conheça Aviãozão Transportadora</li></a>                
                 <a href="../Exception/index.html"><li>Fazer Envio</li></a>
                 <a href="../pagePagamento/index.html"><li>Pagamento</li></a>
             </ul>    
